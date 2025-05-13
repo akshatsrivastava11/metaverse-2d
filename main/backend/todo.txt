@@ -1,0 +1,22 @@
+//maintain the jwt token in local storage
+- Get other users metadata (name and avatarUrl)
+    
+    GET /api/v1/user/metadata/bulk?ids=[1, 3, 55]
+    Returns
+    
+    ```go
+    {
+      "avatars": [{
+        "userId": 1,
+        "imageUrl": "https://image.com/cat.png"
+      }, {
+        "userId": 3,
+        "imageUrl": "https://image.com/cat2.png"
+      }, {
+        "userId": 55,
+        "imageUrl": "https://image.com/cat3.png"
+      }]
+    }
+    ``` this endpoint needs to be done 
+
+  //checkout for createSpace after writing up  creating map endpoint
