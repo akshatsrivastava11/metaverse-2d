@@ -21,7 +21,7 @@ const axios = {
         } catch (e) {
             return e.response
         }
-    },
+    }, 
     put: async (...args) => {
         try {
             const res = await axios2.put(...args)

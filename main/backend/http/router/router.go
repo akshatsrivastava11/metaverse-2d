@@ -1,7 +1,7 @@
 package router
 
 import (
-	"backendMetaverse/controllers"
+	"backendMetaverse/http/controllers"
 
 	"github.com/gorilla/mux"
 )

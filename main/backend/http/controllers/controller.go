@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"backendMetaverse/client"
+	"backendMetaverse/http/client"
+	"backendMetaverse/http/utils"
 	"backendMetaverse/prisma/db"
-	"backendMetaverse/utils"
 	"strconv"
 	"strings"
 
@@ -43,6 +43,7 @@ type AddingElementRequest struct {
 // var client *db.PrismaClient=client.Client()
 // working
 func SignupControllers(w http.ResponseWriter, r *http.Request) {
+
 	prismaClient := client.GetClient()
 	w.Header().Set("Content-Type", "application/json")
 	w.Header().Set("Access-Control-Allow-Methods", "POST")
@@ -378,7 +379,7 @@ type CreateAvaterResponse struct {
 	Name     string `json:"name"`
 }
 
-// wlorking
+// working
 func CreateAvatar(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	prismaClient := client.GetClient()
